@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>로그인 폼 테이블로 만들기</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            font-family: "맑은 고딕";
+            font-size: 12px;
+        }
+        #login_box {
+            width: 220px;
+            height: 120px;
+            border: solid 1px #bbb;
+            border-radius: 15px;
+            margin: 10px 10px;
+            padding: 10px 15px;
+        }
+        h2 {
+            font-family: "Arial";
+            margin-bottom: 10px;
+        }
+        #login_box input {
+            width: 100px;
+            height: 18px;
+        }
+        #id span, #pass span {
+            display: inline-block;
+            width: 20px;
+        }
+        #login_btn button {
+            margin-left: 5px;
+            padding: 12px;
+            border-radius: 5px;
+        }
+        #btns {
+            padding-top: 12px;
+            text-decoration: underline;
+        }
+        #btns span {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="login_box">
+        <h2>Member Login</h2>
+        <table>
+            <tr>
+                <td id="id">
+                    <span>ID</span>
+                    <input type="text">
+                </td>
+                <td rowspan="2" id="login_btn"><button>로그인</button></td>
+            </tr>
+            <tr>
+                <td id="pass">
+                    <span>PW</span>
+                    <input type="password">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" id="btns">
+                    <span>회원 가입</span>
+                    <span>아이디/비밀번호 찾기</span>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
