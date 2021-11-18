@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        font-family: "굴림";
+        font-size: 14px;
+        color: #777;
+        width: 685px;
+        position: absolute;
+        top: 10%;
+        left: 30%;
+    }
+    ul {
+        list-style: none;
+    }
+    h4 {
+        margin-top: 30px;
+        padding-bottom: 10px;
+        border-bottom: solid 2px rgb(45, 130, 199);
+    }
+    h4, .col1 {
+        color: #333;
+    }
+    .cols .col1 {
+        display: inline-block;
+        text-align: right;
+        width: 150px;
+        margin: 10px 10px 10px 0;
+    }
+    .cols .col2{
+        width: 100px;
+    }
+    .cols li, .cols {
+        border-bottom: solid 1px #ccc;
+    }
+    #overlap {
+        color: #fff;
+        background-color: rgb(11, 101, 161);
+        border-radius: 4px;
+        font-size: 12px;
+        padding: 0 5px;
+    }
+    .year {
+        width: 50px;
+    }
+    .mm_dd {
+        width: 20px;
+    }
+    .tel1 {
+        width: 30px;
+    }
+    .tel2 {
+        width: 50px;
+    }
+    #end {
+        margin-top: 30px;
+        text-align: center;
+    }
+    #end button {
+        width: 80px;
+        margin: 0 5px;
+    }
+    li {
+    }
+</style>
+<body>
+    <h4><img src="회원가입정보.png"> 회원가입정보</h4>
+    <form action="#">
+        <ul class="cols">
+            <li>
+                <span class="col1"><img src="li.png">아이디</span>
+                <input type="text" class="col2">
+                <button id="overlap">중복확인</button>
+                <span>영문, 숫자 조합으로 4~12자 이내</span>
+            </li>
+            <li>
+                <span class="col1"><img src="li.png">비밀번호</span>
+                <input type="password" class="col2">
+                <span>영문, 숫자 조합으로 4~12자 이내</span>
+            </li>
+            <li>
+                <span class="col1"><img src="li.png">비밀번호 확인</span>
+                <input type="password" class="col2">
+            </li>
+            <li>
+                <span class="col1"><img src="li.png">이름</span>
+                <input type="text" class="col2">
+            </li>
+            <li>
+                <span class="col1"><img src="li.png">생년월일</span>
+                <input type="text" class="year">년&nbsp;
+                <input type="text" class="mm_dd">월&nbsp;
+                <input type="text" class="mm_dd">일
+                <input type="radio" name="yang_umm" checked>음력
+                <input type="radio" name="yang_umm">양력&nbsp;
+            </li>
+            <li>
+                <span class="col1"><img src="li.png">이메일</span>
+                <input type="text" class="col2">
+            </li>
+            <li>
+                <span class="col1"><img src="li.png">휴대전화</span>
+                <input type="text" class="tel1"> - 
+                <input type="text" class="tel2"> - 
+                <input type="text" class="tel2">
+            </li>
+            <li>
+                <span class="col1">직업</span>
+                <select class="col2">
+                    <option>직업선택</option>
+                    <option>백수</option>
+                </select>
+            </li>
+                <span class="col1">영어수강목적</span>
+                <input type="checkbox" name="objection1"> 시험대비
+                <input type="checkbox" name="objection2"> 업무상
+                <input type="checkbox" name="objection3"> 취미
+                <input type="checkbox" name="objection4"> 기타
+            </li>
+        </ul>
+        <div id="end"><button>가입취소</button><button type="submit">가입완료</button></div>
+    </form>
+</body>
+</html>
