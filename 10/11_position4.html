@@ -21,16 +21,16 @@
             height: 80px;
             background-color: purple;   /* CSS에서 충돌항목 발생 야기 */
         }
+        #box1 {background-color: #f00;}
+        #box2 {background-color: #0f0;}
+        #box3 {background-color: #ff0;}
         #parent {
             position: relative;
         }
         /* absolute는 부모의 Position 설정이 있으면 부모가 기준점 */
         /* absolute는 부모의 Position 설정이 없으면 좌측 최상단(0,0)이 기준점 */
-        #box1 {background-color: #f00;}
-        #box2 {background-color: #0f0;}
-        #box3 {background-color: #ff0;}
         #box2 {
-            position: absolute; /* absolute : 왼쪽 최상단(0.0)이 기준점 */
+            position: absolute;
             top: 20px;
             left: 30px;
         }
