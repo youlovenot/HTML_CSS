@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>포지션(Position)을 absolute로 설정하기</title>
+    <!-- (0,0)을 기준점으로 박스 이동 -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #parent {
+            width: 500px;
+            height: 300px;
+            border: solid 5px black;
+            margin:  50px 0 0 50px;
+        }
+        #box1, #box2, #box3 {   /* 동시선택자 */
+            width: 80px;
+            height: 80px;
+            background-color: purple;   /* CSS에서 충돌항목 발생 야기 */
+        }
+        #box1 {background-color: #f00;}
+        #box2 {background-color: #0f0;}
+        #box3 {background-color: #ff0;}
+        #box2 {
+            position: absolute; /* absolute : 왼쪽 최상단(0,0)이 기준점 */
+            top: 20px;
+            left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="box1">박스 A</div>
+        <div id="box2">박스 B</div>
+        <div id="box3">박스 C</div>
+    </div>
+</body>
+</html>
