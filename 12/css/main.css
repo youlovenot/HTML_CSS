@@ -61,20 +61,20 @@ aside #guestbook li {
 section#main {
     width:758px;
     float:right;
-    /* border:solid 1px #ff0000; */
+    /*border:solid 1px #ff0000;*/
 }
 /* 공지사항, 자유 게시판, YOUTUBE를 포함하는 박스 */
 section#main #notice_free_youtube {
     height:250px;  
     position:relative;	
     margin-top:10px;
-    /* border:solid 1px #ff0000; */
+    /*border:solid 1px #ff0000;*/
 }
 /* 공지사항 박스 */
 section#main #notice {
     width:360px;
     position:absolute;
-    /*border:solid 1px #0000ff; */
+    /*border:solid 1px #0000ff;*/
 }
 /* 최근 게시물 제목 */
 section#main .latest_title {
@@ -94,11 +94,11 @@ section#main .latest_content .image {
 }
 section#main .latest_content .list {
     float:right;
-    /* border:solid 1px #ff0000; */
+    /*border:solid 1px #ff0000;*/
 }
 section#main .latest_content li {
     padding:10px 0 10px 0;
-    /*border:solid 1px #ff0000; */
+    /*border:solid 1px #ff0000;*/
 }
 section#main .latest_content .list div {
     float:left;
@@ -111,7 +111,7 @@ section#main #free {
     width:360px;
     position:absolute;
     top:120px;
-    /*border:solid 1px #0000ff; */
+    /*border:solid 1px #0000ff;*/
 }
 /* YOUTUBE 동영상 박스 */
 section#main #youtube {
@@ -119,7 +119,7 @@ section#main #youtube {
     height:250px; 
     position:absolute;
     left:380px;
-    /* border:solid 1px #0000ff; */
+    /*border:solid 1px #0000ff;*/
 }
 section#main #youtube_img {
     margin:10px 0 0 45px;
@@ -144,4 +144,3 @@ section .items {
 section .items li {
     margin-top:3px;
 }
-
